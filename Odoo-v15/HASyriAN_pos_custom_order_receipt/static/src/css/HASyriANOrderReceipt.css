@@ -1,0 +1,12 @@
+.proforma-div{
+	outline: dashed;
+    padding: 6px;
+    margin: 4px;
+}
+.proforma-div p{
+	text-align: center;
+    margin: 4px;
+}
+.pos-receipt-amount{
+    margin-bottom: -28px;
+}

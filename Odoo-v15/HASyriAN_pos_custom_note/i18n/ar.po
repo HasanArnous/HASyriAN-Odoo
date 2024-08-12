@@ -1,0 +1,90 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* HASyriAN_pos
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 15.0-20240718\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-08-10 09:34+0000\n"
+"PO-Revision-Date: 2024-08-10 09:34+0000\n"
+"Last-Translator: Hasan Arnous\n"
+"Language-Team: Arabic\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Language: ar\n"
+"Plural-Forms: \n"
+
+#. module: HASyriAN_pos
+#. openerp-web
+#: code:addons/HASyriAN_pos/static/src/js/Screens/ProductScreen/ControlButtons/CustomNoteButton.js:0
+#, python-format
+msgid "Add Custom Note"
+msgstr "اضافة ملاحظة"
+
+#. module: HASyriAN_pos
+#. openerp-web
+#: code:addons/HASyriAN_pos/static/src/xml/Screens/ProductScreen/ControlButtons/CustomNoteButton.xml:0
+#, python-format
+msgid "Add Note"
+msgstr "اضافة ملاحظة"
+
+#. module: HASyriAN_pos
+#. openerp-web
+#: code:addons/HASyriAN_pos/models/pos_order.py:0
+#: code:addons/HASyriAN_pos/static/src/xml/Screens/TicketScreen/CustomTicketScreen.xml:0
+#: code:addons/HASyriAN_pos/static/src/xml/Screens/TicketScreen/CustomTicketScreen.xml:0
+#: model:ir.model.fields,field_description:HASyriAN_pos.field_pos_order__custom_note
+#: model_terms:ir.ui.view,arch_db:HASyriAN_pos.view_pos_pos_form_inherit
+#, python-format
+msgid "Order Custom Note"
+msgstr "ملاحظة الطلبية"
+
+#. module: HASyriAN_pos
+#. openerp-web
+#: code:addons/HASyriAN_pos/models/pos_order.py:0
+#: code:addons/HASyriAN_pos/static/src/xml/Screens/TicketScreen/CustomTicketScreen.xml:0
+#: code:addons/HASyriAN_pos/static/src/xml/Screens/TicketScreen/CustomTicketScreen.xml:0
+#: model:ir.model.fields,field_description:HASyriAN_pos.field_pos_order__custom_note
+#, python-format
+msgid "Custom Note"
+msgstr "ملاحظة"
+
+#. module: HASyriAN_pos
+#: model:ir.model.fields,help:HASyriAN_pos.field_pos_order__custom_note
+msgid "Custom Note for the Order"
+msgstr "اضافة ملاحظة على الطلب"
+
+#. module: HASyriAN_pos
+#. openerp-web
+#: code:addons/HASyriAN_pos/static/src/xml/OrderReceipt.xml:0
+#, python-format
+msgid "Ongoing Order"
+msgstr "طلب جاري"
+
+#. module: HASyriAN_pos
+#: model:ir.model,name:HASyriAN_pos.model_pos_order
+msgid "Point of Sale Orders"
+msgstr "طلبات نقطة البيع"
+
+#. module: HASyriAN_pos
+#. openerp-web
+#: code:addons/HASyriAN_pos/static/src/xml/OrderReceipt.xml:0
+#, python-format
+msgid "Simplified Tax Invoice"
+msgstr "فاتورة ضريبية مبسّطة"
+
+#. module: HASyriAN_pos
+#. openerp-web
+#: code:addons/HASyriAN_pos/static/src/xml/OrderReceipt.xml:0
+#, python-format
+msgid "طلب جاري"
+msgstr "Ongoing Order"
+
+#. module: HASyriAN_pos
+#. openerp-web
+#: code:addons/HASyriAN_pos/static/src/xml/OrderReceipt.xml:0
+#, python-format
+msgid "فاتورة ضريبية مبسطة"
+msgstr "Simplified Tax Invoice"

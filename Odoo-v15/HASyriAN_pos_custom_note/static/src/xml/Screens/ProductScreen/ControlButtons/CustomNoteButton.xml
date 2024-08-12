@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <templates id="template" xml:space="preserve">
+        <t t-name="CustomNoteButton" owl="1">
+            <button type="button" class="control-button" t-on-click="onClick">
+                Add Note
+            </button>
+        </t>
+    </templates>
+</odoo>

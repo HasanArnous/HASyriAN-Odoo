@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <templates id="template" xml:space="preserve">
+        <t t-inherit="point_of_sale.OrderWidget" t-inherit-mode="extension" owl="1">
+            <xpath expr="//div[contains(@class, 'order')]" position="before">
+                <div class="order-widget-custom-note" t-if="!(order.custom_note == undefined || order.custom_note == '')"> 
+                        <t t-esc="order.custom_note" />
+                </div>
+            </xpath>
+        </t>
+    </templates>
+</odoo>

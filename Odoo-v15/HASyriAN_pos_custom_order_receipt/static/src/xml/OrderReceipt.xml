@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+    <t t-inherit="point_of_sale.OrderReceipt" t-inherit-mode="extension" owl="1">
+        
+        <!-- The QR Code placed at the bottom -->
+        <xpath expr="//div[hasclass('after-footer')]" position="replace">
+            <t t-if="receipt.is_gcc_country and !receipt.is_settlement and !props.isBill">
+                <img t-if="receipt.qr_code" id="qrcode" t-att-src="receipt.qr_code" class="pos-receipt-logo pos-receipt-qrcode"/>
+            </t>
+        </xpath>
+
+        <!-- Remove the QR Code from the gcc module-->
+		<xpath expr="//img[@id='qrcode']" position="replace">
+            <t t-if="receipt.is_gcc_country and !receipt.is_settlement and props.isBill">
+                
+            </t>
+        </xpath>
+		
+        <!-- For bill where the order is unpaid -->
+        <xpath expr="//div[hasclass('before-footer')]" position="before">
+            <t t-if="props.isBill !== undefined">
+                <t t-if="props.isBill">
+                    <br/>
+                    <div class="proforma-div">
+                        <p>Ongoing Order</p>
+                        <p>طلب جاري</p>
+                    </div>
+                </t>
+            </t>
+        </xpath>
+
+        <!-- To remove the change from the receipt -->
+        <!-- DOUBLE CHECK -->
+        <xpath expr="//div[hasclass('receipt-change')]" position="replace">
+            <t t-if="receipt.is_gcc_country and props.isBill">
+                <div class="receipt-change">
+                    
+                </div>
+            </t>
+        </xpath>
+        
+    </t>
+	
+</templates>
+
+
