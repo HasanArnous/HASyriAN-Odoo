@@ -7,7 +7,7 @@
             <xpath expr="//div[hasclass('order-row')]/div[2]" position="after">
                 <div class="col wide">
                     <div t-if="env.isMobile">Custom Note</div>
-                    <div><t t-esc="order.custom_note"></t></div>
+                    <div class="custom_note_ticket"><t t-esc="order.custom_note"></t></div>
                 </div>
             </xpath>
         </t>
