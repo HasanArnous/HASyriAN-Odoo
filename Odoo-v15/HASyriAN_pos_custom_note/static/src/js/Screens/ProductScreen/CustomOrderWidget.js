@@ -14,21 +14,24 @@ odoo.define('HASyriAN_pos.CustomOrderWidget', function(require) {
 
         renderCustomNote() {
             const order = this.env.pos.get_order();
-            const container = this.el.querySelector('.order');
-            if (container) {
-                let noteElement = container.previousElementSibling;
-                if (!noteElement || !noteElement.classList.contains('order-widget-custom-note')) {
-                    noteElement = document.createElement('div');
-                    noteElement.className = 'order-widget-custom-note';
-                    container.insertAdjacentElement('beforebegin', noteElement);
-                }
-                if(order.custom_note === undefined || order.custom_note === ''){
-                    noteElement.remove();
-                }
-                else{
-                    noteElement.textContent = order.custom_note || '';
-                }
-            }
+			const order_container = document.getElementsByClassName('order');
+			if(order_container){
+				const container = order_container[0];
+				if (container) {
+					let noteElement = container.previousElementSibling;
+					if (!noteElement || !noteElement.classList.contains('order-widget-custom-note')) {
+						noteElement = document.createElement('div');
+						noteElement.className = 'order-widget-custom-note';
+						container.insertAdjacentElement('beforebegin', noteElement);
+					}
+					if(order.custom_note === undefined || order.custom_note === ''){
+						noteElement.remove();
+					}
+					else{
+						noteElement.textContent = order.custom_note || '';
+					}
+				}				
+			}
         }
     };
 
