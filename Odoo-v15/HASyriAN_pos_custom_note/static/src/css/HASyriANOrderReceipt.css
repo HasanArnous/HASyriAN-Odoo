@@ -3,12 +3,22 @@
     font-size: 1.2em;
     margin: 2px;
     margin-bottom: -12px;
+	white-space: break-spaces;
 }
 
 .order-widget-custom-note{
     font-size: 1.4em;
+	margin-bottom: -6px;
     padding: 4px 10px;
     white-space: pre-wrap;
     word-wrap: break-word;
     background: #fff189;
+	position: sticky;
+    top: 0;
+    z-index: 10;
+    box-shadow: 0px 0px 17px 1px gray;
+}
+
+.custom_note_ticket{
+	white-space: break-spaces;
 }
